@@ -18,7 +18,7 @@ public class Main {
         final int size2 = 10;
         Character[] charArr = new Character[size2];
         for (int i = 0; i < charArr.length; i++) {
-            charArr[i] = (char)('A' + i);
+            charArr[i] = (char) ('A' + i);
         }
 
         //Задача 2 (использую метод printArray для вывода массива в консоль)
@@ -58,7 +58,7 @@ public class Main {
 
     public static void toEvenArray(Integer[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 1) {
+            if (Math.abs(arr[i]) % 2 == 1) {
                 arr[i]++;
             }
         }
